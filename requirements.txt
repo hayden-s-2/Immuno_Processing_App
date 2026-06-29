@@ -5,4 +5,4 @@ pandas==3.0.2
 pillow==11.1.0
 scikit-image==0.26.0
 imageio==2.37.3
-opencv-python==4.13.0.92
+opencv-python-headless==4.13.0.92
