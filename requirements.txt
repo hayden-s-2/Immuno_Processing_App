@@ -1,0 +1,7 @@
+numpy==2.4.4
+matplotlib==3.10.9
+seaborn==0.13.2
+pandas==3.0.2
+pillow==11.1.0
+scikit-image==0.26.0
+imageio==2.37.3
