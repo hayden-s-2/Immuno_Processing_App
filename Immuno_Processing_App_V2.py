@@ -121,6 +121,7 @@ else:
 
 sets = np.round(np.linspace(left_cut, image.shape[1] - right_cut, 4), 0).astype(int)
 set_spacing = sets[2] - sets[1]
+set_xlabels = [f'{sets[0]:.0f} - {sets[1] - 1:.0f}', f'{sets[1]:.0f} - {sets[2] - 1:.0f}', f'{sets[2]:.0f} - {sets[3] - 1:.0f}']
 
 # ── Area fraction profile ─────────────────────────────────────────────────────
 st.subheader("Column-Wise Percent Above Threshold vs Distance")
@@ -170,6 +171,8 @@ sns.boxplot(
     ax=ax5,
 )
 ax5.set_ylabel("Mean Gray Value")
+ax5.set_xticklabels(set_xlabels)
+ax5.set_xlabel("Image Divided into Thirds (Pixels)")
 ax5.set_title(f"Image Mean Gray Value by Thirds (Threshold = {threshold:.0f})")
 st.pyplot(fig5)
 
